@@ -3,18 +3,19 @@ title: 头像列表
 createTime: 2025/07/16 13:44:02
 ---
 
+点击下方图标可以复制头像ID：
 <div class="grid">
     <div
-            v-for="item in displayed"
-            :key="item.id"
-            class="card"
-            :data-tippy-content="tooltipContent(item)"
-            @click="copyId(item.id)"
+        v-for="item in displayed"
+        :key="item.id"
+        class="card"
+        :data-tippy-content="tooltipContent(item)"
+        @click="copyId(item.id)"
     >
         <img
-                :src="`https://mai-assets.xszq.xyz/icon/${item.id}.webp`"
-                :alt="item.name"
-                no-view
+            :src="`https://mai-assets.xszq.xyz/icon/${item.id}.webp`"
+            :alt="item.name"
+            no-view
         />
     </div>
     <div ref="sentinel" class="sentinel"></div>
@@ -30,11 +31,10 @@ createTime: 2025/07/16 13:44:02
     const items = ref([]);
     const displayed = ref([]);
     const idx = ref(0);
-    const batch = 100;             // 每次加载 100 个
+    const batch = 100;
     const notyf = new Notyf();
     const sentinel = ref(null);
 
-    // 生成悬停时的多行内容
     const tooltipContent = item =>
         `<strong>ID:</strong> ${item.id}<br/>
    <strong>名称:</strong> ${item.name}<br/>
