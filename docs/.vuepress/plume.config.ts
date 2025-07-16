@@ -16,6 +16,7 @@ const maimai = defineNoteConfig({
 })
 
 export default defineThemeConfig({
+    logo: '/logo.png',
     notes: {
         link: '/',
         dir: '/',
