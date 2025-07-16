@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "ESNext",
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "jsx": "preserve"
+  },
+  "include": [
+    ".vuepress/**/*.ts"
+  ]
+}
