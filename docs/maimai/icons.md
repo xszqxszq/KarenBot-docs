@@ -63,7 +63,7 @@ createTime: 2025/07/16 13:44:02
     }
 
     onMounted(async () => {
-        const res = await fetch('/data/icon.json');
+        const res = await fetch('/data/maimai/icon.json');
         items.value = await res.json();
         loadMore();
         const io = new IntersectionObserver(entries => {

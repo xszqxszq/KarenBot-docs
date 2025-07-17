@@ -63,7 +63,7 @@ createTime: 2025/07/16 15:14:25
     }
 
     onMounted(async () => {
-        const res = await fetch('/data/plate.json');
+        const res = await fetch('/data/maimai/plate.json');
         items.value = await res.json();
         loadMore();
         const io = new IntersectionObserver(entries => {

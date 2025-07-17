@@ -25,12 +25,21 @@ export default defineThemeConfig({
     navbar: [
         { text: '首页', link: '/' },
         { text: '开始', link: '/get-started' },
+        { text: '功能', link: '/features' },
         {
             text: '舞萌DX',
             activeMatch: '^/maimai/',
             items: [
                 { text: '头像列表', link: '/maimai/icons' },
                 { text: '牌子列表', link: '/maimai/plates' }
+            ]
+        },
+        {
+            text: '表情包',
+            activeMatch: '^/meme/',
+            items: [
+                { text: '表情列表', link: '/meme/' },
+                { text: 'PJSK', link: '/meme/pjsk' },
             ]
         },
     ],

@@ -1,4 +1,3 @@
 ---
-title: features
+title: 功能介绍
 ---
-# 功能介绍
