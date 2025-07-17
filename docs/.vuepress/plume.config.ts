@@ -35,6 +35,7 @@ export default defineThemeConfig({
         },
     ],
     footer: {
-        message: "Created by xszqxszq"
+        message: '<a href="https://beian.miit.gov.cn/">湘ICP备2023033217号</a>',
+        copyright: 'Copyright © 2025 xszqxszq'
     }
 })
