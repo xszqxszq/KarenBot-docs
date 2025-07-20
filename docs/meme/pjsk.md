@@ -1,12 +1,12 @@
 ---
-title: PJSK表情列表
+title: PJSK表情
 ---
 
 这是一个生成PJSK（プロセカ / 初音未来：缤纷舞台）风格表情包的功能。
 
 使用方法：`@可怜BOT /pjsk 人物+编号 文本`
 
-点击下方表情可以快速复制人物+编号：
+**点击下方表情**可以**复制**人物+编号：
 
 <div v-for="character in characters" :key="character.name" class="character-block">
     <h2>{{ character.name }}</h2>
@@ -18,7 +18,7 @@ title: PJSK表情列表
             @click="copyId(character.name, sticker)"
         >
             <img
-                :src="`https://bot-assets.xszq.xyz/meme/pjsk/${sticker}`"
+                :src="`https://bot-assets-fast.xszq.xyz/meme/pjsk/${sticker}`"
                 :alt="sticker"
                 no-view
             />

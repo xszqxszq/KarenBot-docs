@@ -13,7 +13,7 @@ createTime: 2025/07/16 13:44:02
         @click="copyId(item.id)"
     >
         <img
-            :src="`https://mai-assets.xszq.xyz/icon/${item.id}.webp`"
+            :src="`https://mai-assets-fast.xszq.xyz/icon/${item.id}.webp`"
             :alt="item.name"
             no-view
         />
