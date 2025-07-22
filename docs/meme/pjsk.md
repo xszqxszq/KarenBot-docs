@@ -2,7 +2,11 @@
 title: PJSK表情
 ---
 
-这是一个生成PJSK（プロセカ / 初音未来：缤纷舞台）风格表情包的功能。
+<Card title="温馨提示" icon="twemoji:check-mark-button">
+    使用本功能时请遵守中华人民共和国相关法律法规，文明上网。
+</Card>
+
+这是一个生成**PJSK**（プロセカ / 初音未来：缤纷舞台）风格表情包的功能。
 
 使用方法：`@可怜BOT /pjsk 人物+编号 文本`
 
@@ -33,14 +37,13 @@ title: PJSK表情
     import 'notyf/notyf.min.css';
 
     const characters = ref([]);
-    const notyf = new Notyf();
-    const sentinel = ref(null);
+    const notify = new Notyf();
 
     function copyId(character, filename) {
         let id = parseInt(filename.split('_')[1].split('.')[0]);
         let toCopy = character + id;
         navigator.clipboard.writeText(toCopy)
-            .then(() => notyf.success(`已复制表情ID：${toCopy}`));
+            .then(() => notify.success(`已复制表情ID：${toCopy}`));
     }
 
     onMounted(async () => {
@@ -71,8 +74,5 @@ title: PJSK表情
     .card:hover img {
         filter: brightness(0.6);
         cursor: pointer;
-    }
-    .sentinel {
-        height: 1px;
     }
 </style>

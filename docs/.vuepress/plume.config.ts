@@ -14,13 +14,27 @@ const maimai = defineNoteConfig({
         }
     ]
 })
+const meme = defineNoteConfig({
+    dir: 'meme',
+    link: '/meme/',
+    sidebar: [
+        {
+            text: '表情包',
+            collapsed: false,
+            items: [
+                '',
+                'pjsk'
+            ]
+        }
+    ]
+})
 
 export default defineThemeConfig({
     logo: '/logo.png',
     notes: {
         link: '/',
         dir: '/',
-        notes: [maimai]
+        notes: [maimai, meme]
     },
     navbar: [
         { text: '首页', link: '/' },

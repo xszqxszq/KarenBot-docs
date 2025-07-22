@@ -32,7 +32,7 @@ createTime: 2025/07/16 13:44:02
     const displayed = ref([]);
     const idx = ref(0);
     const batch = 100;
-    const notyf = new Notyf();
+    const notify = new Notyf();
     const sentinel = ref(null);
 
     const tooltipContent = item =>
@@ -43,7 +43,7 @@ createTime: 2025/07/16 13:44:02
 
     function copyId(id) {
         navigator.clipboard.writeText(id)
-            .then(() => notyf.success(`已复制头像ID：${id}`));
+            .then(() => notify.success(`已复制头像ID：${id}`));
     }
 
     function loadMore() {
