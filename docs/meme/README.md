@@ -119,7 +119,7 @@ title: 表情列表
         padding: 16px 0;
     }
 
-    @media (min-width: 640px) {
+    @media (min-width: 480px) {
         .masonry {
             column-count: 2;
         }

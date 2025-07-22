@@ -33,6 +33,28 @@
     "options": []
   },
   {
+    "key": "spherize",
+    "name": "球面化",
+    "preview": "spherize.webp",
+    "example": "/球面化 [图片]",
+    "min_images": 1,
+    "max_images": 1,
+    "min_texts": 0,
+    "max_texts": 0,
+    "options": []
+  },
+  {
+    "key": "im_so_happy",
+    "name": "我巨爽",
+    "preview": "im_so_happy.webp",
+    "example": "/我巨爽 [图片]",
+    "min_images": 1,
+    "max_images": 1,
+    "min_texts": 0,
+    "max_texts": 0,
+    "options": []
+  },
+  {
     "key": "abstinence",
     "name": "戒导",
     "preview": "abstinence_241214.webp",
