@@ -44,6 +44,7 @@ export default defineThemeConfig({
             text: '舞萌DX',
             activeMatch: '^/maimai/',
             items: [
+                { text: '随心配', link: '/maimai/combo' },
                 { text: '头像列表', link: '/maimai/icons' },
                 { text: '牌子列表', link: '/maimai/plates' }
             ]
