@@ -5,7 +5,15 @@ const maimai = defineNoteConfig({
     link: '/maimai/',
     sidebar: [
         {
-            text: '舞萌DX',
+            text: '功能说明',
+            collapsed: false,
+            items: [
+                '',
+                'combo',
+            ]
+        },
+        {
+            text: '资源列表',
             collapsed: false,
             items: [
                 'icons',
