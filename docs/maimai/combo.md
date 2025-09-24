@@ -46,3 +46,5 @@ title: 随心配
 ### 鸣谢
 
 鸣谢617、浪涛I2A、北京大的、てんのみぐみ、MAYBOT、MSC丶凌烟、慕湫风、米若及内测中测试Bug及提出建议的各位朋友。
+
+Credit to 宇航员猫娘、MikoBot、Xray-Bot、Chiyuki-Bot
