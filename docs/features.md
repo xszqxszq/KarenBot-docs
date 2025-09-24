@@ -22,22 +22,22 @@ title: 功能介绍
 
 #### 发病
 
-发病功能可以将给定的对象代入抽象语录，生成发病小作文。。
+发病功能可以将给定的对象代入抽象语录，生成发病小作文。
 
 - 使用例：`@可怜BOT` `/发病 小冰`
 
 文本大部分来自[random-stereotypes](https://github.com/lgc-NB2Dev/nonebot-plugin-random-stereotypes)，并自行补充了部分语录。
 
-如果您想提交新的小作文，可以提出[Issue](https://github.com/xszqxszq/KarenBot/issues)或者发起[Pull Request](https://github.com/xszqxszq/KarenBot/pulls)，也可以在 bot 群联系心水湛清
+如果您想提交新的小作文，可以提出[Issue](https://github.com/xszqxszq/KarenBot/issues)或者发起[Pull Request](https://github.com/xszqxszq/KarenBot/pulls)，也可以在 bot 群联系心水湛清。
 
 ### 表情包功能
 
 #### 表情包生成
 
-可怜BOT支持生成各种各样的表情包，详细表情列表及使用例请见[表情包列表](/meme/).
+可怜BOT支持生成各种各样的表情包，详细表情列表及使用例请见[表情包列表](/meme/)。
 
 使用本功能时请注意遵守中华人民共和国相关法律法规及公共道德规范。
-。
+
 - 使用方法：`@可怜BOT` `/生成 表情包名称 参数...`
 
 #### PJSK表情生成
