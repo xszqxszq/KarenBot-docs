@@ -27,7 +27,7 @@ title: 表情列表
         @click="copyId(meme)"
     >
         <img
-            :src="`https://bot-assets-fast.xszq.xyz/meme/memes/${meme.preview}`"
+            :src="`https://bot-assets.xszq.xyz/meme/memes/${meme.preview}`"
             :alt="meme.name"
             no-view
         />
@@ -45,7 +45,7 @@ title: 表情列表
         @click="copyId(meme)"
     >
         <img
-            :src="`https://bot-assets-fast.xszq.xyz/meme/memes/${meme.preview}`"
+            :src="`https://bot-assets.xszq.xyz/meme/memes/${meme.preview}`"
             :alt="meme.name"
             no-view
         />
