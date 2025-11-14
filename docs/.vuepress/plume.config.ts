@@ -78,7 +78,7 @@ export default defineThemeConfig({
         },
     ],
     footer: {
-        message: '<a href="https://beian.miit.gov.cn/">湘ICP备2023033217号</a>',
+        message: '<a href="https://beian.miit.gov.cn/">湘ICP备2023033217号</a><img style="width: 14px; display: inline; margin: -4px 5px" src="https://otmdb.cn/wp-content/uploads/2025/10/beian.png"><a href="https://beian.mps.gov.cn/#/query/webSearch?code=43012102000949" rel="noreferrer" target="_blank">湘公网安备43012102000949号</a>',
         copyright: 'Copyright © 2025 xszqxszq'
     }
 })
