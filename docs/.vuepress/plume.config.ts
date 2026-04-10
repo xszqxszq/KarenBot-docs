@@ -10,6 +10,7 @@ const maimai = defineNoteConfig({
             items: [
                 '',
                 'combo',
+                'update'
             ]
         },
         {
