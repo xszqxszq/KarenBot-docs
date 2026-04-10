@@ -68,7 +68,7 @@ title: 功能介绍
 ### 东方Project
 
 #### 原曲认知测验
-
+[combo.md](maimai/combo.md)
 该功能与 [THBWiki](https://cd.thwiki.cc/quiz) 上的原曲认知测验类似，给出一小段东方原曲的音频，请猜出该东方原曲的名称或者为几面BGM。
 
 - 使用例：`@可怜BOT` `原曲认知测验 normal`
