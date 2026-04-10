@@ -56,7 +56,8 @@ export default defineThemeConfig({
                     text: '功能',
                     items: [
                         { text: '功能一览', link: '/maimai/' },
-                        { text: '随心配', link: '/maimai/combo' }
+                        { text: '随心配', link: '/maimai/combo' },
+                        { text: '更新查分器', link: '/maimai/update' }
                     ]
                 },
                 {
