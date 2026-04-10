@@ -15,10 +15,14 @@ title: 更新查分器
 下一步，请根据您使用的代理软件，进行对应设置：
 
 ### Clash / ShadowRocket
-仅需在软件中添加一个订阅并更新，订阅地址为：`https://bot-api.otmdb.cn/maimai/proxy-config/clash`
+仅需在软件中添加一个订阅并更新。
+
+订阅地址为：`https://bot-api.otmdb.cn/maimai/proxy-config/clash`
 
 ### Throne / Nekoray
 请先在浏览器中打开以下地址，复制内容后回到代理软件中，点击“配置档”-“手动新建配置档”，类型请选择“自定义（sing-box 配置）”，并粘贴复制的内容。
+
+`https://bot-api.otmdb.cn/maimai/proxy-config/sing-box`
 
 **请勿添加为订阅链接，否则会导致出现问题。**
 
