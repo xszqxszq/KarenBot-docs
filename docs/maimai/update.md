@@ -11,6 +11,8 @@ title: 更新查分器
 ## 1. 绑定 Token
 首次使用前，请使用“/绑定水鱼 成绩导入Token”（可在[水鱼查分器](https://www.diving-fish.com/maimaidx/prober/)中点击“编辑个人资料”查看）在可怜BOT中绑定查分器的更新 Token。
 
+![](/image/update-tutorial-1-1.png) ![](/image/update-tutorial-1-2.png) ![](/image/update-tutorial-1-3.png)
+
 ## 2. 设置代理
 下一步，请根据您使用的代理软件，进行对应设置：
 
@@ -29,6 +31,14 @@ title: 更新查分器
 ## 3. 进行更新
 首先向可怜BOT发送“更新”命令，将会向您发送形如https://bot-api.otmdb.cn/maimai/update?token=xxxxxx的一个地址；
 
+![](/image/update-tutorial-3-1.png)
+
 接下来请打开您的代理软件，并连接至上一步配置好的代理；
 
-最后，请将上述链接粘贴至微信任意聊天窗口中发送，然后点击打开。当您看到提示“BOT正在更新中，您可以关闭此页面了”后，即可关闭页面，等待更新完成。
+最后，请将上述链接粘贴至微信任意聊天窗口中发送，然后点击打开。
+
+![](/image/update-tutorial-3-2.jpg)
+
+当您看到提示“BOT正在更新中，您可以关闭此页面了”后，即可关闭页面，等待更新完成。
+
+![](/image/update-tutorial-3-3.jpg) ![](/image/update-tutorial-3-4.png)
