@@ -8,7 +8,7 @@ config:
     background: tint-plate
     hero:
       name: 可怜BOT
-      text: 舞萌DX/东方/活字印刷/表情包QQ机器人
+      text: 音游/东方/活字印刷/表情包QQ机器人
       actions:
         -
           theme: brand
