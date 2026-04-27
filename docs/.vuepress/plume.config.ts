@@ -9,8 +9,7 @@ const maimai = defineNoteConfig({
             collapsed: false,
             items: [
                 '',
-                'combo',
-                'update'
+                'combo'
             ]
         },
         {
@@ -19,6 +18,20 @@ const maimai = defineNoteConfig({
             items: [
                 'icons',
                 'plates'
+            ]
+        }
+    ]
+})
+const chunithm = defineNoteConfig({
+    dir: 'chunithm',
+    link: '/chunithm/',
+    sidebar: [
+        {
+            text: '功能说明',
+            collapsed: false,
+            items: [
+                '',
+                'combo'
             ]
         }
     ]
@@ -43,7 +56,7 @@ export default defineThemeConfig({
     notes: {
         link: '/',
         dir: '/',
-        notes: [maimai, meme]
+        notes: [maimai, chunithm, meme]
     },
     navbar: [
         { text: '首页', link: '/' },
@@ -57,8 +70,7 @@ export default defineThemeConfig({
                     text: '功能',
                     items: [
                         { text: '功能一览', link: '/maimai/' },
-                        { text: '随心配', link: '/maimai/combo' },
-                        { text: '更新查分器', link: '/maimai/update' }
+                        { text: '随心配', link: '/maimai/combo' }
                     ]
                 },
                 {
@@ -66,6 +78,19 @@ export default defineThemeConfig({
                     items: [
                         { text: '头像列表', link: '/maimai/icons' },
                         { text: '牌子列表', link: '/maimai/plates' }
+                    ]
+                }
+            ]
+        },
+        {
+            text: '中二节奏',
+            activeMatch: '^/chunithm/',
+            items: [
+                {
+                    text: '功能',
+                    items: [
+                        { text: '功能一览', link: '/chunithm/' },
+                        { text: '随心配', link: '/chunithm/combo' }
                     ]
                 }
             ]
