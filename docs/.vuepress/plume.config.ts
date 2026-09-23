@@ -50,6 +50,19 @@ const meme = defineNoteConfig({
         }
     ]
 })
+const develop = defineNoteConfig({
+    dir: 'develop',
+    link: '/develop/',
+    sidebar: [
+        {
+            text: '开发',
+            collapsed: false,
+            items: [
+                'deploy'
+            ]
+        }
+    ]
+})
 
 export default defineThemeConfig({
     logo: '/logo.png',
@@ -101,6 +114,13 @@ export default defineThemeConfig({
             items: [
                 { text: '表情列表', link: '/meme/' },
                 { text: 'PJSK', link: '/meme/pjsk' },
+            ]
+        },
+        {
+            text: '开发',
+            activeMatch: '^/develop/',
+            items: [
+                { text: '部署', link: '/develop/deploy' },
             ]
         },
     ],
