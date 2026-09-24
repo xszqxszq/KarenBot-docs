@@ -77,13 +77,13 @@ createTime: 2026/09/24 17:40:00
 <style scoped>
     .grid {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(0, 366px));
         gap: 12px;
         padding: 16px 0;
     }
     .card {
         position: relative;
-        padding-top: 39.6%;
+        padding-top: 39.62%;
         cursor: pointer;
     }
     .card img {

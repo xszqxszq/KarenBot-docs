@@ -77,7 +77,7 @@ createTime: 2026/09/24 17:40:00
 <style scoped>
     .grid {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+        grid-template-columns: repeat(auto-fill, 54px);
         gap: 12px;
         padding: 16px 0;
     }
