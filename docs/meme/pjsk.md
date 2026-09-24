@@ -22,7 +22,7 @@ title: PJSK表情
             @click="copyId(character.name, sticker)"
         >
             <img
-                :src="`https://bot-assets.xszq.xyz/meme/pjsk/${sticker}`"
+                :src="`https://bot-docs-image.otmdb.cn/meme/pjsk/${sticker}`"
                 :alt="sticker"
                 no-view
             />
