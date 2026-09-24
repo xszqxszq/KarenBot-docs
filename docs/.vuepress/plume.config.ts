@@ -33,6 +33,14 @@ const chunithm = defineNoteConfig({
                 '',
                 'combo'
             ]
+        },
+        {
+            text: '资源列表',
+            collapsed: false,
+            items: [
+                'icons',
+                'plates'
+            ]
         }
     ]
 })
@@ -104,6 +112,13 @@ export default defineThemeConfig({
                     items: [
                         { text: '功能一览', link: '/chunithm/' },
                         { text: '随心配', link: '/chunithm/combo' }
+                    ]
+                },
+                {
+                    text: '资源',
+                    items: [
+                        { text: '头像列表', link: '/chunithm/icons' },
+                        { text: '牌子列表', link: '/chunithm/plates' }
                     ]
                 }
             ]

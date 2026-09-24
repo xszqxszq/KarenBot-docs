@@ -1,0 +1,103 @@
+---
+title: 牌子列表
+createTime: 2026/09/24 17:40:00
+---
+
+点击下方图标可以复制牌子ID：
+<div class="grid">
+    <div
+        v-for="item in displayed"
+        :key="item.id"
+        class="card"
+        :data-tippy-content="tooltipContent(item)"
+        @click="copyId(item.id)"
+    >
+        <img
+            :src="`https://bot-docs-image.otmdb.cn/chunithm/plate/${item.id}.webp`"
+            :alt="item.name"
+            no-view
+        />
+    </div>
+    <div ref="sentinel" class="sentinel"></div>
+</div>
+
+<script setup>
+    import { ref, onMounted, nextTick } from 'vue';
+    import tippy from 'tippy.js';
+    import 'tippy.js/dist/tippy.css';
+    import { Notyf } from 'notyf';
+    import 'notyf/notyf.min.css';
+
+    const items = ref([]);
+    const displayed = ref([]);
+    const idx = ref(0);
+    const batch = 100;
+    const notify = new Notyf();
+    const sentinel = ref(null);
+
+    const tooltipContent = item => {
+        let content = `<strong>ID:</strong> ${item.id}`;
+        if (item.name) content += `<br/><strong>名称:</strong> ${item.name}`;
+        if (item.hint) content += `<br/><strong>说明:</strong> ${item.hint}`;
+        return content;
+    };
+
+    function copyId(id) {
+        navigator.clipboard.writeText(id)
+            .then(() => notify.success(`已复制牌子ID：${id}`));
+    }
+
+    function loadMore() {
+        const slice = items.value.slice(idx.value, idx.value + batch);
+        if (slice.length) {
+            displayed.value.push(...slice);
+            idx.value += batch;
+            nextTick(() => {
+                tippy('.card', {
+                    allowHTML: true,
+                    interactive: true,
+                    theme: 'light-border',
+                    maxWidth: 200
+                });
+            });
+        }
+    }
+
+    onMounted(async () => {
+        const res = await fetch('/data/chunithm/plate.json');
+        items.value = await res.json();
+        loadMore();
+        const io = new IntersectionObserver(entries => {
+            if (entries[0].isIntersecting) loadMore();
+        }, { rootMargin: '200px' });
+        if (sentinel.value) io.observe(sentinel.value);
+    });
+</script>
+
+<style scoped>
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        gap: 12px;
+        padding: 16px 0;
+    }
+    .card {
+        position: relative;
+        padding-top: 39.6%;
+        cursor: pointer;
+    }
+    .card img {
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        object-fit: cover;
+        transition: filter .5s ease;
+    }
+    .card:hover img {
+        filter: brightness(0.6);
+        cursor: pointer;
+    }
+    .sentinel {
+        height: 1px;
+    }
+</style>
