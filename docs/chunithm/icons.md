@@ -13,7 +13,7 @@ createTime: 2026/09/24 17:40:00
         @click="copyId(item.id)"
     >
         <img
-            :src="`https://bot-docs-image.otmdb.cn/chunithm/icon/${item.id}.webp`"
+            :src="`https://image.docs.karenbot.cn/chunithm/icon/${item.id}.webp`"
             :alt="item.name"
             no-view
         />

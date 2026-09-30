@@ -13,7 +13,7 @@ createTime: 2025/07/16 13:44:02
         @click="copyId(item.id)"
     >
         <img
-            :src="`https://bot-docs-image.otmdb.cn/maimai/icon/${item.id}.webp`"
+            :src="`https://image.docs.karenbot.cn/maimai/icon/${item.id}.webp`"
             :alt="item.name"
             no-view
         />
