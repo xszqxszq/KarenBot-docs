@@ -140,7 +140,7 @@ export default defineThemeConfig({
         },
     ],
     footer: {
-        message: '<a href="https://beian.miit.gov.cn/">湘ICP备2023033217号</a>',
-        copyright: 'Copyright © 2025 xszqxszq'
+        message: '<a href="https://beian.miit.gov.cn/">湘ICP备2023033217号-3</a><img style="width: 14px; display: inline; margin: -4px 5px" src="/beian.png"><a href="https://beian.mps.gov.cn/#/query/webSearch?code=43012102001438" rel="noreferrer" target="_blank">湘公网安备43012102001438号</a>',
+        copyright: 'Copyright © 2026 xszqxszq'
     }
 })
